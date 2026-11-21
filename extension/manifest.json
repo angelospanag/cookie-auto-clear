@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Cookie Auto-Clear",
+  "version": "1.0",
+  "description": "Deletes a site's cookies once its last open tab is closed, unless the domain is whitelisted.",
+  "permissions": ["cookies", "tabs", "storage", "contextMenus", "alarms"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Cookie Auto-Clear",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

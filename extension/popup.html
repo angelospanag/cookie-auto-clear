@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Cookie Auto-Clear</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cookie Auto-Clear</h1>
+      <label class="toggle">
+        <input type="checkbox" id="enabled-toggle" />
+        <span id="enabled-label">Enabled</span>
+      </label>
+    </header>
+
+    <nav class="tab-bar" role="tablist">
+      <button class="tab-btn" data-tab="whitelist" role="tab" aria-selected="true" type="button">Whitelist</button>
+      <button class="tab-btn" data-tab="settings" role="tab" aria-selected="false" type="button">Settings</button>
+      <button class="tab-btn" data-tab="activity" role="tab" aria-selected="false" type="button">Activity</button>
+    </nav>
+
+    <div class="tab-panel" data-panel="whitelist">
+      <section>
+        <div class="current-site-row">
+          <div class="current-site-info">
+            <div class="current-site-label">This tab</div>
+            <div id="current-site-domain" class="current-site-domain">—</div>
+            <div id="current-site-cookies" class="current-site-cookies"></div>
+          </div>
+          <div class="current-site-actions">
+            <button id="add-current-site" type="button">Add to whitelist</button>
+            <div id="current-site-whitelisted" class="whitelisted-status" hidden>
+              <span class="whitelisted-label">✓ Whitelisted</span>
+              <button id="remove-current-site" type="button" class="link-btn">Remove</button>
+            </div>
+            <button id="clear-current-site" type="button" class="secondary-btn">Clear now</button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Whitelist</h2>
+        <p class="hint">
+          Domains here keep their cookies even after every tab for that site is
+          closed. Matches the whole domain, e.g. <code>example.com</code>
+          covers <code>www.example.com</code> and <code>login.example.com</code>.
+        </p>
+        <form id="add-form">
+          <input
+            type="text"
+            id="domain-input"
+            placeholder="example.com"
+            autocomplete="off"
+          />
+          <button type="submit">Add</button>
+        </form>
+        <input
+          type="search"
+          id="whitelist-filter"
+          class="filter-input"
+          placeholder="Filter whitelist"
+          autocomplete="off"
+          hidden
+        />
+        <ul id="whitelist"></ul>
+        <p id="empty-whitelist" class="hint">No domains whitelisted yet.</p>
+      </section>
+    </div>
+
+    <div class="tab-panel" data-panel="settings" hidden>
+      <section>
+        <h2>Appearance</h2>
+        <div class="field-row">
+          <label for="theme-select">Theme</label>
+          <select id="theme-select">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+      </section>
+
+      <section>
+        <h2>Grace period</h2>
+        <div class="field-row">
+          <label for="grace-period-select">Clear cookies after last tab closes</label>
+          <select id="grace-period-select">
+            <option value="0">Immediately</option>
+            <option value="10">After 10 seconds</option>
+            <option value="30">After 30 seconds</option>
+            <option value="60">After 1 minute</option>
+            <option value="120">After 2 minutes</option>
+            <option value="300">After 5 minutes</option>
+          </select>
+        </div>
+        <p class="hint">
+          Reopening a tab cancels the pending clear. Very short delays may be
+          rounded up by Safari's alarm scheduling.
+        </p>
+      </section>
+
+      <section>
+        <h2>Navigation</h2>
+        <label class="checkbox-row">
+          <input type="checkbox" id="domain-change-toggle" />
+          <span>Also clean when a tab navigates to a different site</span>
+        </label>
+        <p class="hint">
+          Off by default. Sites you navigate away from are still cleaned on the
+          next sweep; this just starts their grace period straight away. Can
+          break logins that redirect through another site.
+        </p>
+      </section>
+
+      <section class="danger-zone">
+        <h2>Danger zone</h2>
+        <p class="hint">Clears all cookies now except whitelisted domains. Cannot be undone.</p>
+        <button id="clear-all-btn" type="button" class="danger-btn">
+          Clear all except whitelisted
+        </button>
+        <p id="clear-all-result" class="hint"></p>
+      </section>
+    </div>
+
+    <div class="tab-panel" data-panel="activity" hidden>
+      <section>
+        <div class="tally">
+          <span id="total-cleared" class="tally-number">0</span>
+          <span class="tally-label">cookies cleared total</span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Waiting to clear</h2>
+        <ul id="pending"></ul>
+        <p id="empty-pending" class="hint">No sites in their grace period.</p>
+      </section>
+
+      <section>
+        <div class="section-header">
+          <h2>Recently cleared</h2>
+          <button id="clear-log" type="button" class="clear-log-btn">Clear</button>
+        </div>
+        <ul id="log"></ul>
+        <p id="empty-log" class="hint">Nothing cleared yet.</p>
+      </section>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

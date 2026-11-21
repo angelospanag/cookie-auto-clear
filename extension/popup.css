@@ -1,0 +1,448 @@
+:root {
+  --bg: #ffffff;
+  --text: #1c1c1e;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #3a3a3c;
+  --surface: #f2f2f7;
+  --surface-raised: #ffffff;
+  --border: #d1d1d6;
+  --border-subtle: #f0f0f2;
+  --accent: #007aff;
+  --accent-text: #ffffff;
+  --danger: #ff3b30;
+  --danger-text: #ffffff;
+  --danger-disabled: #ffb3ad;
+  --disabled-bg: #c7c7cc;
+  --disabled-text: #8e8e93;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1c1e;
+    --text: #f2f2f7;
+    --text-secondary: #98989d;
+    --text-tertiary: #c7c7cc;
+    --surface: #2c2c2e;
+    --surface-raised: #3a3a3c;
+    --border: #48484a;
+    --border-subtle: #38383a;
+    --accent: #0a84ff;
+    --accent-text: #ffffff;
+    --danger: #ff453a;
+    --danger-text: #ffffff;
+    --danger-disabled: #6b2e2a;
+    --disabled-bg: #48484a;
+    --disabled-text: #6e6e73;
+    --shadow: rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* Safari's extension popup doesn't reliably report prefers-color-scheme, so
+   the popup's own Light/Dark setting (Settings tab) stamps this attribute
+   on <html> and these overrides take priority over both the default :root
+   values above and the (apparently non-functional, here) media query. */
+:root[data-theme="dark"] {
+  --bg: #1c1c1e;
+  --text: #f2f2f7;
+  --text-secondary: #98989d;
+  --text-tertiary: #c7c7cc;
+  --surface: #2c2c2e;
+  --surface-raised: #3a3a3c;
+  --border: #48484a;
+  --border-subtle: #38383a;
+  --accent: #0a84ff;
+  --accent-text: #ffffff;
+  --danger: #ff453a;
+  --danger-text: #ffffff;
+  --danger-disabled: #6b2e2a;
+  --disabled-bg: #48484a;
+  --disabled-text: #6e6e73;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+:root[data-theme="light"] {
+  --bg: #ffffff;
+  --text: #1c1c1e;
+  --text-secondary: #6e6e73;
+  --text-tertiary: #3a3a3c;
+  --surface: #f2f2f7;
+  --surface-raised: #ffffff;
+  --border: #d1d1d6;
+  --border-subtle: #f0f0f2;
+  --accent: #007aff;
+  --accent-text: #ffffff;
+  --danger: #ff3b30;
+  --danger-text: #ffffff;
+  --danger-disabled: #ffb3ad;
+  --disabled-bg: #c7c7cc;
+  --disabled-text: #8e8e93;
+  --shadow: rgba(0, 0, 0, 0.08);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+  width: 320px;
+  margin: 0;
+  padding: 12px 14px 16px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 15px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin: 14px 0 6px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clear-log-btn {
+  background: none;
+  color: var(--danger);
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.clear-log-btn:disabled {
+  color: var(--disabled-text);
+  cursor: default;
+}
+
+.tab-bar {
+  display: flex;
+  gap: 2px;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 2px;
+  margin-bottom: 4px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  color: var(--text-tertiary);
+  padding: 6px 0;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.tab-btn:active {
+  opacity: 1;
+}
+
+.tab-btn[aria-selected="true"] {
+  background: var(--surface-raised);
+  color: var(--text);
+  box-shadow: 0 1px 2px var(--shadow);
+}
+
+.tab-panel section:first-child {
+  margin-top: 0;
+}
+
+.tab-panel section:first-child h2 {
+  margin-top: 0;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.hint {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin: 4px 0 8px;
+  line-height: 1.4;
+}
+
+.hint code {
+  background: var(--surface);
+  border-radius: 3px;
+  padding: 1px 3px;
+}
+
+.field-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field-row label {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.field-row select {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--surface-raised);
+  color: var(--text);
+}
+
+.current-site-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.current-site-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.current-site-domain {
+  font-size: 13px;
+  font-weight: 600;
+  word-break: break-all;
+}
+
+#add-current-site {
+  flex-shrink: 0;
+}
+
+#add-current-site:disabled {
+  background: var(--disabled-bg);
+  cursor: default;
+}
+
+#add-form {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+#domain-input {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 13px;
+  background: var(--surface-raised);
+  color: var(--text);
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 13px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.remove-btn {
+  background: none;
+  color: var(--danger);
+  font-size: 12px;
+  padding: 2px 6px;
+}
+
+.log-entry {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.log-domain {
+  font-weight: 600;
+}
+
+.log-meta {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.danger-zone {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 10px;
+}
+
+.danger-zone h2 {
+  color: var(--danger);
+}
+
+.danger-btn {
+  background: var(--danger);
+  color: var(--danger-text);
+  width: 100%;
+}
+
+.danger-btn:disabled {
+  background: var(--danger-disabled);
+  cursor: default;
+}
+
+.tally {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.tally-number {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.tally-label {
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.current-site-info {
+  min-width: 0;
+}
+
+.current-site-cookies {
+  font-size: 11px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.current-site-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.secondary-btn {
+  background: var(--surface-raised);
+  color: var(--danger);
+  border: 1px solid var(--border);
+}
+
+.secondary-btn:disabled {
+  color: var(--disabled-text);
+  cursor: default;
+}
+
+.filter-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  margin-bottom: 4px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 12px;
+  background: var(--surface-raised);
+  color: var(--text);
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.log-entry {
+  flex-direction: row;
+  align-items: center;
+}
+
+.log-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.link-btn {
+  background: none;
+  color: var(--accent);
+  font-size: 12px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+}
+
+.pending-right {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.whitelisted-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4px;
+  padding: 4px 0;
+}
+
+.whitelisted-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #34c759;
+}
+
+.whitelisted-status .link-btn {
+  font-size: 11px;
+  padding: 2px 4px;
+}
+
+.whitelisted-status[hidden] {
+  display: none;
+}

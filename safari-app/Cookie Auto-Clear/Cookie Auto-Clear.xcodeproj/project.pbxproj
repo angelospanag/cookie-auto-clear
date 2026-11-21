@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE782F11300CED1D00763D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F10300CED1D00763D7B /* AppDelegate.swift */; };
+		BE782F13300CED1D00763D7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F12300CED1D00763D7B /* SceneDelegate.swift */; };
+		BE782F16300CED1D00763D7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE782F14300CED1D00763D7B /* LaunchScreen.storyboard */; };
+		BE782F19300CED1D00763D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE782F17300CED1D00763D7B /* Main.storyboard */; };
+		BE782F22300CED1D00763D7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F21300CED1D00763D7B /* AppDelegate.swift */; };
+		BE782F25300CED1D00763D7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE782F23300CED1D00763D7B /* Main.storyboard */; };
+		BE782F2C300CED1D00763D7B /* Cookie Auto-Clear Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE782F2B300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE782F36300CED1D00763D7B /* Cookie Auto-Clear Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BE782F35300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BE782F3B300CED1D00763D7B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = BE782F00300CED1B00763D7B /* Main.html */; };
+		BE782F3C300CED1D00763D7B /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = BE782F00300CED1B00763D7B /* Main.html */; };
+		BE782F3D300CED1D00763D7B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE782F02300CED1B00763D7B /* Icon.png */; };
+		BE782F3E300CED1D00763D7B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE782F02300CED1B00763D7B /* Icon.png */; };
+		BE782F3F300CED1D00763D7B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BE782F03300CED1B00763D7B /* Style.css */; };
+		BE782F40300CED1D00763D7B /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = BE782F03300CED1B00763D7B /* Style.css */; };
+		BE782F41300CED1D00763D7B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BE782F04300CED1B00763D7B /* Script.js */; };
+		BE782F42300CED1D00763D7B /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = BE782F04300CED1B00763D7B /* Script.js */; };
+		BE782F43300CED1D00763D7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F05300CED1B00763D7B /* ViewController.swift */; };
+		BE782F44300CED1D00763D7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F05300CED1B00763D7B /* ViewController.swift */; };
+		BE782F45300CED1D00763D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE782F06300CED1C00763D7B /* Assets.xcassets */; };
+		BE782F46300CED1D00763D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE782F06300CED1C00763D7B /* Assets.xcassets */; };
+		BE782F47300CED1D00763D7B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F08300CED1C00763D7B /* SafariWebExtensionHandler.swift */; };
+		BE782F48300CED1D00763D7B /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE782F08300CED1C00763D7B /* SafariWebExtensionHandler.swift */; };
+		BE782F5F300CED1D00763D7B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5A300CED1D00763D7B /* popup.js */; };
+		BE782F60300CED1D00763D7B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5B300CED1D00763D7B /* background.js */; };
+		BE782F61300CED1D00763D7B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5C300CED1D00763D7B /* popup.html */; };
+		BE782F62300CED1D00763D7B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5D300CED1D00763D7B /* manifest.json */; };
+		BE782F63300CED1D00763D7B /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5E300CED1D00763D7B /* popup.css */; };
+		BE782F64300CED1D00763D7B /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5A300CED1D00763D7B /* popup.js */; };
+		BE782F65300CED1D00763D7B /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5B300CED1D00763D7B /* background.js */; };
+		BE782F66300CED1D00763D7B /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5C300CED1D00763D7B /* popup.html */; };
+		BE782F67300CED1D00763D7B /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5D300CED1D00763D7B /* manifest.json */; };
+		BE782F68300CED1D00763D7B /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = BE782F5E300CED1D00763D7B /* popup.css */; };
+		59E9912A007DB8E64B754D36 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = B3F9D06ACE8A18097FFDF5FA /* icons */; };
+		7B82076942093B72CC298AB2 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = B3F9D06ACE8A18097FFDF5FA /* icons */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE782F2D300CED1D00763D7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE782EFA300CED1B00763D7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE782F2A300CED1D00763D7B;
+			remoteInfo = "Cookie Auto-Clear Extension (iOS)";
+		};
+		BE782F37300CED1D00763D7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE782EFA300CED1B00763D7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE782F34300CED1D00763D7B;
+			remoteInfo = "Cookie Auto-Clear Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BE782F4E300CED1D00763D7B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE782F2C300CED1D00763D7B /* Cookie Auto-Clear Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F55300CED1D00763D7B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BE782F36300CED1D00763D7B /* Cookie Auto-Clear Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE782F01300CED1B00763D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		BE782F02300CED1B00763D7B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		BE782F03300CED1B00763D7B /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		BE782F04300CED1B00763D7B /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		BE782F05300CED1B00763D7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE782F06300CED1C00763D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE782F08300CED1C00763D7B /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		BE782F0D300CED1D00763D7B /* Cookie Auto-Clear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookie Auto-Clear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE782F10300CED1D00763D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE782F12300CED1D00763D7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BE782F15300CED1D00763D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE782F18300CED1D00763D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE782F1A300CED1D00763D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE782F1F300CED1D00763D7B /* Cookie Auto-Clear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cookie Auto-Clear.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE782F21300CED1D00763D7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE782F24300CED1D00763D7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE782F26300CED1D00763D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE782F2B300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cookie Auto-Clear Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE782F30300CED1D00763D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE782F35300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Cookie Auto-Clear Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE782F3A300CED1D00763D7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE782F5A300CED1D00763D7B /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = ../../../extension/popup.js; sourceTree = "<group>"; };
+		BE782F5B300CED1D00763D7B /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = ../../../extension/background.js; sourceTree = "<group>"; };
+		BE782F5C300CED1D00763D7B /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../extension/popup.html; sourceTree = "<group>"; };
+		BE782F5D300CED1D00763D7B /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../extension/manifest.json; sourceTree = "<group>"; };
+		BE782F5E300CED1D00763D7B /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = popup.css; path = ../../../extension/popup.css; sourceTree = "<group>"; };
+		B3F9D06ACE8A18097FFDF5FA /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = ../../../extension/icons; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE782F0A300CED1C00763D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F1C300CED1D00763D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F28300CED1D00763D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F32300CED1D00763D7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE782EF9300CED1B00763D7B = {
+			isa = PBXGroup;
+			children = (
+				BE782EFE300CED1B00763D7B /* Shared (App) */,
+				BE782F07300CED1C00763D7B /* Shared (Extension) */,
+				BE782F0F300CED1D00763D7B /* iOS (App) */,
+				BE782F20300CED1D00763D7B /* macOS (App) */,
+				BE782F2F300CED1D00763D7B /* iOS (Extension) */,
+				BE782F39300CED1D00763D7B /* macOS (Extension) */,
+				BE782F0E300CED1D00763D7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE782EFE300CED1B00763D7B /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F05300CED1B00763D7B /* ViewController.swift */,
+				BE782F06300CED1C00763D7B /* Assets.xcassets */,
+				BE782EFF300CED1B00763D7B /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		BE782EFF300CED1B00763D7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F00300CED1B00763D7B /* Main.html */,
+				BE782F02300CED1B00763D7B /* Icon.png */,
+				BE782F03300CED1B00763D7B /* Style.css */,
+				BE782F04300CED1B00763D7B /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE782F07300CED1C00763D7B /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F59300CED1D00763D7B /* Resources */,
+				BE782F08300CED1C00763D7B /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		BE782F0E300CED1D00763D7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F0D300CED1D00763D7B /* Cookie Auto-Clear.app */,
+				BE782F1F300CED1D00763D7B /* Cookie Auto-Clear.app */,
+				BE782F2B300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */,
+				BE782F35300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE782F0F300CED1D00763D7B /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F10300CED1D00763D7B /* AppDelegate.swift */,
+				BE782F12300CED1D00763D7B /* SceneDelegate.swift */,
+				BE782F14300CED1D00763D7B /* LaunchScreen.storyboard */,
+				BE782F17300CED1D00763D7B /* Main.storyboard */,
+				BE782F1A300CED1D00763D7B /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		BE782F20300CED1D00763D7B /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F21300CED1D00763D7B /* AppDelegate.swift */,
+				BE782F23300CED1D00763D7B /* Main.storyboard */,
+				BE782F26300CED1D00763D7B /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		BE782F2F300CED1D00763D7B /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F30300CED1D00763D7B /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BE782F39300CED1D00763D7B /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F3A300CED1D00763D7B /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		BE782F59300CED1D00763D7B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE782F5A300CED1D00763D7B /* popup.js */,
+				BE782F5B300CED1D00763D7B /* background.js */,
+				BE782F5C300CED1D00763D7B /* popup.html */,
+				BE782F5D300CED1D00763D7B /* manifest.json */,
+				BE782F5E300CED1D00763D7B /* popup.css */,
+				B3F9D06ACE8A18097FFDF5FA /* icons */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE782F0C300CED1C00763D7B /* Cookie Auto-Clear (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE782F4F300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear (iOS)" */;
+			buildPhases = (
+				BE782F09300CED1C00763D7B /* Sources */,
+				BE782F0A300CED1C00763D7B /* Frameworks */,
+				BE782F0B300CED1C00763D7B /* Resources */,
+				BE782F4E300CED1D00763D7B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE782F2E300CED1D00763D7B /* PBXTargetDependency */,
+			);
+			name = "Cookie Auto-Clear (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Cookie Auto-Clear (iOS)";
+			productReference = BE782F0D300CED1D00763D7B /* Cookie Auto-Clear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE782F1E300CED1D00763D7B /* Cookie Auto-Clear (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE782F56300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear (macOS)" */;
+			buildPhases = (
+				BE782F1B300CED1D00763D7B /* Sources */,
+				BE782F1C300CED1D00763D7B /* Frameworks */,
+				BE782F1D300CED1D00763D7B /* Resources */,
+				BE782F55300CED1D00763D7B /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE782F38300CED1D00763D7B /* PBXTargetDependency */,
+			);
+			name = "Cookie Auto-Clear (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Cookie Auto-Clear (macOS)";
+			productReference = BE782F1F300CED1D00763D7B /* Cookie Auto-Clear.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE782F2A300CED1D00763D7B /* Cookie Auto-Clear Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE782F4B300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear Extension (iOS)" */;
+			buildPhases = (
+				BE782F27300CED1D00763D7B /* Sources */,
+				BE782F28300CED1D00763D7B /* Frameworks */,
+				BE782F29300CED1D00763D7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cookie Auto-Clear Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "Cookie Auto-Clear Extension (iOS)";
+			productReference = BE782F2B300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		BE782F34300CED1D00763D7B /* Cookie Auto-Clear Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE782F52300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear Extension (macOS)" */;
+			buildPhases = (
+				BE782F31300CED1D00763D7B /* Sources */,
+				BE782F32300CED1D00763D7B /* Frameworks */,
+				BE782F33300CED1D00763D7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Cookie Auto-Clear Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "Cookie Auto-Clear Extension (macOS)";
+			productReference = BE782F35300CED1D00763D7B /* Cookie Auto-Clear Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE782EFA300CED1B00763D7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 2660;
+				TargetAttributes = {
+					BE782F0C300CED1C00763D7B = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					BE782F1E300CED1D00763D7B = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					BE782F2A300CED1D00763D7B = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					BE782F34300CED1D00763D7B = {
+						CreatedOnToolsVersion = 26.6;
+					};
+				};
+			};
+			buildConfigurationList = BE782EFD300CED1B00763D7B /* Build configuration list for PBXProject "Cookie Auto-Clear" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE782EF9300CED1B00763D7B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = BE782F0E300CED1D00763D7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE782F0C300CED1C00763D7B /* Cookie Auto-Clear (iOS) */,
+				BE782F1E300CED1D00763D7B /* Cookie Auto-Clear (macOS) */,
+				BE782F2A300CED1D00763D7B /* Cookie Auto-Clear Extension (iOS) */,
+				BE782F34300CED1D00763D7B /* Cookie Auto-Clear Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE782F0B300CED1C00763D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F3D300CED1D00763D7B /* Icon.png in Resources */,
+				BE782F16300CED1D00763D7B /* LaunchScreen.storyboard in Resources */,
+				BE782F3B300CED1D00763D7B /* Main.html in Resources */,
+				BE782F41300CED1D00763D7B /* Script.js in Resources */,
+				BE782F45300CED1D00763D7B /* Assets.xcassets in Resources */,
+				BE782F19300CED1D00763D7B /* Main.storyboard in Resources */,
+				BE782F3F300CED1D00763D7B /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F1D300CED1D00763D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F3E300CED1D00763D7B /* Icon.png in Resources */,
+				BE782F40300CED1D00763D7B /* Style.css in Resources */,
+				BE782F25300CED1D00763D7B /* Main.storyboard in Resources */,
+				BE782F42300CED1D00763D7B /* Script.js in Resources */,
+				BE782F46300CED1D00763D7B /* Assets.xcassets in Resources */,
+				BE782F3C300CED1D00763D7B /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F29300CED1D00763D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F68300CED1D00763D7B /* popup.css in Resources */,
+				BE782F67300CED1D00763D7B /* manifest.json in Resources */,
+				BE782F65300CED1D00763D7B /* background.js in Resources */,
+				BE782F66300CED1D00763D7B /* popup.html in Resources */,
+				BE782F64300CED1D00763D7B /* popup.js in Resources */,
+				59E9912A007DB8E64B754D36 /* icons in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F33300CED1D00763D7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F63300CED1D00763D7B /* popup.css in Resources */,
+				BE782F62300CED1D00763D7B /* manifest.json in Resources */,
+				BE782F60300CED1D00763D7B /* background.js in Resources */,
+				BE782F61300CED1D00763D7B /* popup.html in Resources */,
+				BE782F5F300CED1D00763D7B /* popup.js in Resources */,
+				7B82076942093B72CC298AB2 /* icons in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE782F09300CED1C00763D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F43300CED1D00763D7B /* ViewController.swift in Sources */,
+				BE782F11300CED1D00763D7B /* AppDelegate.swift in Sources */,
+				BE782F13300CED1D00763D7B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F1B300CED1D00763D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F44300CED1D00763D7B /* ViewController.swift in Sources */,
+				BE782F22300CED1D00763D7B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F27300CED1D00763D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F47300CED1D00763D7B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE782F31300CED1D00763D7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE782F48300CED1D00763D7B /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE782F2E300CED1D00763D7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE782F2A300CED1D00763D7B /* Cookie Auto-Clear Extension (iOS) */;
+			targetProxy = BE782F2D300CED1D00763D7B /* PBXContainerItemProxy */;
+		};
+		BE782F38300CED1D00763D7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE782F34300CED1D00763D7B /* Cookie Auto-Clear Extension (macOS) */;
+			targetProxy = BE782F37300CED1D00763D7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE782F00300CED1B00763D7B /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE782F01300CED1B00763D7B /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		BE782F14300CED1D00763D7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE782F15300CED1D00763D7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		BE782F17300CED1D00763D7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE782F18300CED1D00763D7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE782F23300CED1D00763D7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE782F24300CED1D00763D7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE782F49300CED1D00763D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE782F4A300CED1D00763D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		BE782F4C300CED1D00763D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear.extension";
+				PRODUCT_NAME = "Cookie Auto-Clear Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE782F4D300CED1D00763D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear.extension";
+				PRODUCT_NAME = "Cookie Auto-Clear Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE782F50300CED1D00763D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F26LCC66CV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear";
+				PRODUCT_NAME = "Cookie Auto-Clear";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE782F51300CED1D00763D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F26LCC66CV;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear";
+				PRODUCT_NAME = "Cookie Auto-Clear";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE782F53300CED1D00763D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F26LCC66CV;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear.extension";
+				PRODUCT_NAME = "Cookie Auto-Clear Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE782F54300CED1D00763D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F26LCC66CV;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear.extension";
+				PRODUCT_NAME = "Cookie Auto-Clear Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		BE782F57300CED1D00763D7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F26LCC66CV;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear";
+				PRODUCT_NAME = "Cookie Auto-Clear";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BE782F58300CED1D00763D7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F26LCC66CV;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Cookie Auto-Clear";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.angelospanag.cookie-auto-clear";
+				PRODUCT_NAME = "Cookie Auto-Clear";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE782EFD300CED1B00763D7B /* Build configuration list for PBXProject "Cookie Auto-Clear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE782F49300CED1D00763D7B /* Debug */,
+				BE782F4A300CED1D00763D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE782F4B300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE782F4C300CED1D00763D7B /* Debug */,
+				BE782F4D300CED1D00763D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE782F4F300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE782F50300CED1D00763D7B /* Debug */,
+				BE782F51300CED1D00763D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE782F52300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE782F53300CED1D00763D7B /* Debug */,
+				BE782F54300CED1D00763D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE782F56300CED1D00763D7B /* Build configuration list for PBXNativeTarget "Cookie Auto-Clear (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE782F57300CED1D00763D7B /* Debug */,
+				BE782F58300CED1D00763D7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE782EFA300CED1B00763D7B /* Project object */;
+}
