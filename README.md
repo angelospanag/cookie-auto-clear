@@ -4,6 +4,11 @@ A Safari Web Extension that deletes a site's cookies once you've closed every
 tab for it, unless the site is on your whitelist. It's a Safari take on
 [Cookie AutoDelete](https://github.com/Cookie-AutoDelete/Cookie-AutoDelete).
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/popup-dark.jpg">
+  <img alt="The toolbar popup's Whitelist, Activity and Settings tabs" src="docs/screenshots/popup-light.jpg">
+</picture>
+
 ## Features
 
 - **Automatic cleanup**: when you close a site's last tab, its cookies are
